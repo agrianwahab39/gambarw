@@ -533,22 +533,35 @@ def classify_manipulation_advanced(analysis_results):
                 confidence = get_enhanced_confidence_level(final_splicing_score)
                 details = get_enhanced_splicing_details(analysis_results)
         
-        # Integrate uncertainty results
+        # ======================= PERUBAHAN UTAMA DI SINI =======================
+        final_manipulation_type = uncertainty_report.get('primary_assessment', 'N/A').replace('Indikasi: ', '')
+        final_confidence = uncertainty_report.get('confidence_level', 'Sangat Rendah')
+        final_details = uncertainty_report.get('reliability_indicators', [])
+        final_details.append(uncertainty_report.get('uncertainty_description', ''))
+
         classification_result = {
-            'type': manipulation_type, 'confidence': confidence,
-            'copy_move_score': final_copy_move_score, 'splicing_score': final_splicing_score,
-            'details': details,
-            'ml_scores': {'copy_move': ml_copy_move_score, 'splicing': ml_splicing_score, 'ensemble_copy_move': ensemble_copy_move, 'ensemble_splicing': ensemble_splicing, 'detailed_ml_scores': ml_scores},
+            'type': final_manipulation_type,
+            'confidence': final_confidence,
+            'copy_move_score': final_copy_move_score,
+            'splicing_score': final_splicing_score,
+            'details': final_details,
+            'ml_scores': {
+                'copy_move': ensemble_copy_move,
+                'splicing': ensemble_splicing,
+                'detailed_ml_scores': ml_scores
+            },
             'feature_vector': feature_vector.tolist(),
-            'traditional_scores': {'copy_move': copy_move_score, 'splicing': splicing_score},
-            # New uncertainty-based results
+            'traditional_scores': {
+                'copy_move': copy_move_score,
+                'splicing': splicing_score
+            },
             'uncertainty_analysis': {
                 'probabilities': probabilities,
                 'report': uncertainty_report,
-                'formatted_output': format_probability_results(probabilities, uncertainty_report)
+                'formatted_output': format_probability_results(probabilities, uncertainty_report),
             }
         }
-        
+
         return classification_result
     except KeyError as e:
         print(f"  Warning: Classification failed due to missing key: {e}. Returning default error.")
