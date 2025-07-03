@@ -1,0 +1,182 @@
+[
+    {
+        "timestamp": "2025-07-04 01:56:40",
+        "image_name": "im18f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im18f_2025-07-04_01-56-40.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "14.30s"
+    },
+    {
+        "timestamp": "2025-07-04 02:00:42",
+        "image_name": "im50f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im50f_2025-07-04_02-00-42.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "12.85s"
+    },
+    {
+        "timestamp": "2025-07-04 02:02:20",
+        "image_name": "im11f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im11f_2025-07-04_02-02-20.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "11.16s"
+    },
+    {
+        "timestamp": "2025-07-04 02:06:51",
+        "image_name": "tes.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_tes_2025-07-04_02-06-51.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "5.47s"
+    },
+    {
+        "timestamp": "2025-07-04 02:10:34",
+        "image_name": "tes17.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_tes17_2025-07-04_02-10-34.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "30.51s"
+    },
+    {
+        "timestamp": "2025-07-04 02:12:48",
+        "image_name": "WIN_20240102_14_31_05_Pro.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_WIN_20240102_14_31_05_Pro_2025-07-04_02-12-48.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "40.88s"
+    },
+    {
+        "timestamp": "2025-07-04 02:21:34",
+        "image_name": "im47f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im47f_2025-07-04_02-21-34.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "15.35s"
+    },
+    {
+        "timestamp": "2025-07-04 02:29:52",
+        "image_name": "im11f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im11f_2025-07-04_02-29-52.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "14.45s"
+    },
+    {
+        "timestamp": "2025-07-04 02:33:26",
+        "image_name": "im47f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im47f_2025-07-04_02-33-26.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "14.58s"
+    },
+    {
+        "timestamp": "2025-07-04 02:46:47",
+        "image_name": "TP_C01_011_copy_ln20.png",
+        "thumbnail_path": "history_thumbnails\\thumb_TP_C01_011_copy_ln20_2025-07-04_02-46-47.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "12.04s"
+    },
+    {
+        "timestamp": "2025-07-04 02:57:22",
+        "image_name": "im10f.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_im10f_2025-07-04_02-57-22.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "13.97s"
+    },
+    {
+        "timestamp": "2025-07-04 02:58:50",
+        "image_name": "tes17.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_tes17_2025-07-04_02-58-50.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "10.79s"
+    },
+    {
+        "timestamp": "2025-07-04 03:00:17",
+        "image_name": "WIN_20240102_14_31_05_Pro.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_WIN_20240102_14_31_05_Pro_2025-07-04_03-00-17.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "16.29s"
+    },
+    {
+        "timestamp": "2025-07-04 03:05:11",
+        "image_name": "WIN_20240102_14_31_05_Pro.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_WIN_20240102_14_31_05_Pro_2025-07-04_03-05-11.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "18.30s"
+    },
+    {
+        "timestamp": "2025-07-04 03:05:47",
+        "image_name": "WIN_20240102_14_31_05_Pro.jpg",
+        "thumbnail_path": "history_thumbnails\\thumb_WIN_20240102_14_31_05_Pro_2025-07-04_03-05-47.jpg",
+        "analysis_summary": {
+            "type": "Manipulasi Kompleks (Copy-Move + Splicing)",
+            "confidence": "Tinggi (75-90%)",
+            "copy_move_score": 83,
+            "splicing_score": 83
+        },
+        "processing_time": "16.38s"
+    }
+]
