@@ -537,7 +537,7 @@ def classify_manipulation_advanced(analysis_results):
         final_manipulation_type = uncertainty_report.get('primary_assessment', 'N/A').replace('Indikasi: ', '')
         final_confidence = uncertainty_report.get('confidence_level', 'Sangat Rendah')
         final_details = uncertainty_report.get('reliability_indicators', [])
-        final_details.append(uncertainty_report.get('uncertainty_description', ''))
+        final_details.append(uncertainty_report.get('uncertainty_summary', ''))
 
         classification_result = {
             'type': final_manipulation_type,
@@ -571,7 +571,7 @@ def classify_manipulation_advanced(analysis_results):
             'ml_scores': {}, 'feature_vector': [], 'traditional_scores': {},
             'uncertainty_analysis': {
                 'probabilities': {'copy_move_probability': 0.0, 'splicing_probability': 0.0, 'authentic_probability': 1.0, 'uncertainty_level': 1.0, 'confidence_intervals': {'copy_move': {'lower':0, 'upper':0}, 'splicing': {'lower':0, 'upper':0}, 'authentic': {'lower':0, 'upper':0}}},
-                'report': {'primary_assessment': 'Error: Data Insufficient', 'confidence_level': 'Sangat Rendah', 'uncertainty_description': 'Major data issues, classification unreliable', 'reliability_indicators': [], 'recommendation': 'Rerun analysis with valid data or debug.'},
+                'report': {'primary_assessment': 'Error: Data Insufficient', 'confidence_level': 'Sangat Rendah', 'uncertainty_summary': 'Major data issues, classification unreliable', 'reliability_indicators': [], 'recommendation': 'Rerun analysis with valid data or debug.'},
                 'formatted_output': "Error: Classification data missing. See logs."
             }
         }
@@ -585,7 +585,7 @@ def classify_manipulation_advanced(analysis_results):
             'ml_scores': {}, 'feature_vector': [], 'traditional_scores': {},
             'uncertainty_analysis': {
                 'probabilities': {'copy_move_probability': 0.0, 'splicing_probability': 0.0, 'authentic_probability': 1.0, 'uncertainty_level': 1.0, 'confidence_intervals': {'copy_move': {'lower':0, 'upper':0}, 'splicing': {'lower':0, 'upper':0}, 'authentic': {'lower':0, 'upper':0}}},
-                'report': {'primary_assessment': 'Error: Unknown Issue', 'confidence_level': 'Sangat Rendah', 'uncertainty_description': 'An unexpected error occurred during classification. Result is unreliable.', 'reliability_indicators': [], 'recommendation': 'Rerun analysis or consult support.'},
+                'report': {'primary_assessment': 'Error: Unknown Issue', 'confidence_level': 'Sangat Rendah', 'uncertainty_summary': 'An unexpected error occurred during classification. Result is unreliable.', 'reliability_indicators': [], 'recommendation': 'Rerun analysis or consult support.'},
                 'formatted_output': "Error: Classification process failed. See logs for details."
             }
         }
