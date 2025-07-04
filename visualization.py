@@ -334,7 +334,7 @@ def create_uncertainty_visualization(ax, results):
     y_start_pos -= line_height
 
     # Detailed Uncertainty Description
-    uncertainty_desc_text = report_details.get('uncertainty_description', 'No description available.')
+    uncertainty_desc_text = report_details.get('uncertainty_summary', 'No description available.')
     # Using markdown or similar approach within text to denote importance, if not raw text
     ax.text(0.05, y_start_pos, 
             f"_{uncertainty_desc_text}_", # Italicize description
