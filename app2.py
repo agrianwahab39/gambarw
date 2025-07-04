@@ -231,6 +231,10 @@ def display_statistical_analysis(original_pil, results):
 
 def display_final_report(results):
     st.header("Tahap 4: Laporan Akhir dan Interpretasi")
+    st.markdown(
+        "Bagian ini merangkum temuan utama beserta skor kepercayaan dan tingkat ketidakpastian. "
+        "Harap telaah indikator keandalan sebelum mengambil keputusan akhir."
+    )
 
     # ... (Panel penjelasan tetap sama) ...
 
@@ -257,9 +261,9 @@ def display_final_report(results):
                 else:
                     st.success(f"**Indikasi Utama:** {primary_assessment}", icon="✅")
 
-                # Hanya tampilkan tingkat keyakinan jika ketidakpastian RENDAH (< 25%)
+                # Hanya tampilkan skor kepercayaan jika ketidakpastian RENDAH (< 25%)
                 if uncertainty_level < 0.25:
-                    st.metric(label="Tingkat Keyakinan", value=confidence_level)
+                    st.metric(label="Skor Kepercayaan", value=confidence_level)
                 else:
                     # Jika tidak pasti, tampilkan level ketidakpastian sebagai gantinya
                     st.metric(label="Tingkat Ketidakpastian", value=f"{uncertainty_level*100:.1f}%", delta="Hasil Ambigu", delta_color="inverse")
@@ -275,8 +279,8 @@ def display_final_report(results):
             # ... (Sisa kode untuk menampilkan grafik bar probabilitas, dll. tetap sama) ...
             
             # PENINGKATAN #4: Beri penekanan pada penjelasan teknis ketidakpastian
-            with st.expander("🔍 Alasan di Balik Hasil Analisis (Detail Teknis)", expanded=True):
-                st.markdown(f"**Deskripsi Ketidakpastian:** {report_details.get('uncertainty_description', 'N/A')}")
+            with st.expander("🔍 Penjelasan Detail Ketidakpastian", expanded=True):
+                st.markdown(f"**Rangkuman Ketidakpastian:** {report_details.get('uncertainty_summary', 'N/A')}")
                 st.markdown("**Indikator Keandalan:**")
                 for indicator in report_details.get('reliability_indicators', []):
                     st.markdown(f"- {indicator}")
@@ -1054,7 +1058,7 @@ def main_app():
             "📊 Tahap 1: Analisis Inti",
             "🔬 Tahap 2: Analisis Lanjut",
             "📈 Tahap 3: Analisis Statistik",
-            "📋 Tahap 4: Laporan Akhir & Probabilitas", # Nama tab bisa diubah
+            "📋 Tahap 4: Laporan Akhir & Kepercayaan", # Nama tab bisa diubah
             "🧪 Tahap 5: Hasil Pengujian", # Updated tab name
             "📄 Ekspor Laporan",
             "📜 Riwayat Analisis"

@@ -491,7 +491,7 @@ def analyze_image_comprehensive_advanced(image_path, output_dir="./results"):
             # Provide minimum uncertainty analysis structure if it failed
             'uncertainty_analysis': { 
                 'probabilities': {'copy_move_probability': 0.0, 'splicing_probability': 0.0, 'authentic_probability': 1.0, 'uncertainty_level': 1.0, 'confidence_intervals': {k:{'lower':0,'upper':0} for k in ['copy_move','splicing','authentic']}},
-                'report': {'primary_assessment': 'Classification Failed', 'confidence_level': 'Sangat Rendah', 'uncertainty_description': 'Internal error, result unreliable', 'reliability_indicators': [], 'recommendation': 'Rerun analysis.'},
+                'report': {'primary_assessment': 'Classification Failed', 'confidence_level': 'Sangat Rendah', 'uncertainty_summary': 'Internal error, result unreliable', 'reliability_indicators': [], 'recommendation': 'Rerun analysis.'},
                 'formatted_output': "Classification process failed."
             }
         }

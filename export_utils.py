@@ -1156,7 +1156,7 @@ def add_conclusion_advanced(doc, analysis_results):
         
         doc.add_paragraph("### Hasil Klasifikasi Probabilistik:", level=3)
         doc.add_paragraph(f"• Penilaian Utama: {uncertainty_report.get('primary_assessment', 'N/A')}")
-        doc.add_paragraph(f"• Tingkat Keyakinan Sistem: {uncertainty_report.get('confidence_level', 'N/A')}")
+        doc.add_paragraph(f"• Skor Kepercayaan Sistem: {uncertainty_report.get('confidence_level', 'N/A')}")
         doc.add_paragraph(f"• Tingkat Ketidakpastian: {probabilities.get('uncertainty_level', 0):.1%}")
 
         doc.add_paragraph("\nDistribusi Probabilitas:", level=3)
@@ -1492,7 +1492,7 @@ def add_system_validation_section(doc, analysis_results=None):
     doc.add_paragraph(
         f"Berdasarkan integritas pipeline ({pipeline_integrity_score:.1f}%), validasi silang algoritma ({algo_score_display:.1f}%), "
         f"skor kepercayaan forensik keseluruhan untuk analisis ini adalah **{final_overall_score:.1f}%**. "
-        f"Skor ini merepresentasikan tingkat keyakinan terhadap kesimpulan akhir."
+        f"Skor ini merepresentasikan derajat kepercayaan terhadap kesimpulan akhir."
     )
     
     # Add confidence interpretation based on `final_overall_score`

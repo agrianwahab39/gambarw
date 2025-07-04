@@ -389,7 +389,7 @@ class UncertaintyClassifier:
         report = {
             'primary_assessment': self._determine_primary_assessment(probabilities),
             'confidence_level': self._determine_confidence_level(probabilities),
-            'uncertainty_description': self._describe_uncertainty(probabilities['uncertainty_level']),
+            'uncertainty_summary': self._summarize_uncertainty(probabilities['uncertainty_level']),
             'reliability_indicators': self._generate_reliability_indicators(probabilities),
             'recommendation': self._generate_recommendation(probabilities)
         }
@@ -479,8 +479,8 @@ class UncertaintyClassifier:
         else:
             return "Sangat Rendah"
     
-    def _describe_uncertainty(self, uncertainty_level: float) -> str:
-        """Describe uncertainty in human-readable form."""
+    def _summarize_uncertainty(self, uncertainty_level: float) -> str:
+        """Summarize uncertainty in human-readable form."""
         if uncertainty_level < 0.1:
             return "Sangat rendah: Bukti yang ditemukan sangat konsisten dan jelas."
         elif uncertainty_level < 0.2:
@@ -562,7 +562,7 @@ def format_probability_results(probabilities: Dict, details: Dict) -> str:
     
     # Primary Assessment
     output.append(f"PENILAIAN UTAMA: {details['primary_assessment']}")
-    output.append(f"TINGKAT KEYAKINAN: {details['confidence_level']}")
+    output.append(f"SKOR KEPERCAYAAN: {details['confidence_level']}")
     output.append("")
     
     # Probability Distribution
@@ -584,7 +584,7 @@ def format_probability_results(probabilities: Dict, details: Dict) -> str:
     # Uncertainty Analysis
     output.append("ANALISIS KETIDAKPASTIAN:")
     output.append(f"Tingkat ketidakpastian: {probabilities['uncertainty_level']:.1%}")
-    output.append(details['uncertainty_description'])
+    output.append(details['uncertainty_summary'])
     output.append("")
     
     # Reliability Indicators
